@@ -41,8 +41,6 @@ jobs:
         pytest || echo "Tests failed with exit code $?, see above for details"
 
     - name: Deploy to Production
-      run: python app.py
-
-    - name: Deploy to Production
       run: |
-          gunicorn -b 0.0.0.0:5000 app:app
+        gunicorn -b 0.0.0.0:5000 app:app
+
