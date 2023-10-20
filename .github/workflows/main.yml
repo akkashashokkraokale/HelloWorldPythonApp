@@ -42,5 +42,5 @@ jobs:
 
     - name: Deploy to Production
       run: |
-        gunicorn -b 0.0.0.0:5000 app:app.py
+        gunicorn -b 0.0.0.0:5000 app:app
 
